@@ -8,7 +8,7 @@ func main()  {
 	for i:=range arr1{
 		fmt.Printf("一维数组addr =%v\n",&arr1[i])
 	}
-	//二维数组
+	//二维数组也是连续的
 	arr2:=[2][8]int8{
 		{1,2,3,4,5,6,7,8},
 		{1,2,3,4,5,6,7,8},
