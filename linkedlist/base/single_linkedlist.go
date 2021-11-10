@@ -8,8 +8,15 @@ type ListNode struct {
 	Next *ListNode
 }
 
-//foreach
-func ShowNode(node *ListNode)  {
+//Traversal from start from head
+func Traversal(node *ListNode)  {
+	for node!=nil{
+		fmt.Printf("%+v\n",*node)
+		node=node.Next
+	}
+}
+//ReverseTraversal  start from end
+func ReverseTraversal(node *ListNode)  {
 	for node!=nil{
 		fmt.Printf("%+v\n",*node)
 		node=node.Next
@@ -27,7 +34,7 @@ func Add() {
 		node.Next=tail
 		tail=&node
 	}
-	ShowNode(tail)
+	Traversal(tail)
 }
 //insert from tail
 func Append() {
@@ -40,5 +47,9 @@ func Append() {
 		(*tail).Next=&node
 		tail=&node
 	}
-	ShowNode(head)
+	Traversal(head)
+}
+//remove one node
+func Remove()  {
+	
 }
